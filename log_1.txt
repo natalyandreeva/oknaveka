@@ -1,0 +1,28 @@
+[25-Nov-2016 18:12:41 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/includes/application.php(132): JApplication->route()
+#2 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php on line 194
+[26-Nov-2016 18:39:15 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/includes/application.php(132): JApplication->route()
+#2 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php on line 194
+[26-Nov-2016 18:39:16 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/includes/application.php(132): JApplication->route()
+#2 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php on line 194
+[26-Nov-2016 18:39:20 Europe/Moscow] PHP Fatal error:  Uncaught exception 'InvalidArgumentException' with message 'Invalid URI detected.' in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php:194
+Stack trace:
+#0 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/application/application.php(248): JURI::getInstance()
+#1 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/includes/application.php(132): JApplication->route()
+#2 /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/index.php(36): JSite->route()
+#3 {main}
+  thrown in /home/oknavekat1/domains/oknavekatambov.ru/public_html/ryazan/libraries/joomla/environment/uri.php on line 194

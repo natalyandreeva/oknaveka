@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" method="upgrade" type="plugin" group="system">
+	<name>Reformal Widget</name>
+	<author>Команда Reformal.ru</author>
+	<creationDate>2013</creationDate>
+	<copyright>2008-2013 Реформал.ру</copyright>
+	<license></license>
+	<authorEmail>info@reformal.ru</authorEmail>
+	<authorUrl>http://reformal.ru/</authorUrl>
+	<version>0.2</version>
+	<description>PLG_SYSTEM_REFORMALWIDGET_DESC</description>
+	<files>
+		<filename plugin="reformalwidget">reformalwidget.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_reformalwidget.ini</language>
+		<language tag="en-GB">en-GB.plg_system_reformalwidget.sys.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_reformalwidget.ini</language>
+		<language tag="ru-RU">ru-RU.plg_system_reformalwidget.sys.ini</language>
+	</languages>
+    <scriptfile>script.php</scriptfile>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+  				<field name="refwd_code" type="textarea" filter="raw" label="PLG_SYSTEM_REFORMALWIDGET_CODE" rows="15" cols="45" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,26 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+ 
+ .wrap_tovar {border:1px solid #ccc;width:311px;height:470px;margin:8px 25px 7px 5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+-ms-border-radius:5px;
+border-radius: 5px; 
+float:left;padding:20px 5px 0px 5px;position:relative;
+}
+
+.wrap_tovar:hover {border:1px solid #054286}
+.wrap_tovar a {}
+
+.categ_2 {border:0px solid #ccc;padding:0px;text-align:center}
+
+.categ_title {font-weight: normal;margin:10px 0px 10px 0px}
+.categ_title  {font-size:17px;color:#333;text-align:center;}
+.categ_title a  {color:#333}
+
+.price_mag {font-size:17px; color:#054286;float:right;margin:0;padding:0;position:relative;top:4px}
+.price_mag_post {font-size:20px; color:#054286;margin:0;padding:0;position:relative;top:0px}
