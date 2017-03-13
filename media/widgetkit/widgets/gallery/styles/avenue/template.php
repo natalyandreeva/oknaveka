@@ -47,7 +47,7 @@
 			<?php endforeach; ?>
 
 		</ul>
-        <?php if ($settings['buttons']): ?><div class="next"></div><div class="prev"></div><?php endif; ?>
+        <?php if ($settings['buttons']): ?><div class="next w-icon-slider-right"></div><div class="prev w-icon-slider-left"></div><?php endif; ?>
 		<div class="caption"></div><ul class="captions"><?php echo implode('', $captions);?></ul>
 	</div>
 	<?php echo ($settings['navigation'] && count($navigation)) ? '<ul class="nav">'.implode('', $navigation).'</ul>' : '';?>

@@ -25,8 +25,7 @@ if (is_writable($this['path']->path('cache:'))) {
 		if ($script->getType() == 'File' && !$script->getPath()) {
 			$scripts[] = $script;
 		}
-	}
-	
+	}	
 }
 
 // load jQuery, for Joomla 3.x or lower
@@ -34,7 +33,9 @@ if (version_compare(JVERSION, '3.0.0', '>=')) {
 	JHtml::_('jquery.framework');	
 } else if (!$this['system']->application->get('jquery')) {
 	$this['system']->application->set('jquery', true);
-	$this['system']->document->addScript($this['path']->url('widgetkit:js/jquery.js'));
+	$app = JFactory::getApplication();
+	if ($app->isAdmin()) 
+		$this['system']->document->addScript($this['path']->url('widgetkit:js/jquery.js'));
 }
 
 // add styles

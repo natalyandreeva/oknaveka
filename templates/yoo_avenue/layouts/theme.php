@@ -14,19 +14,42 @@ include($this['path']->path('layouts:theme.config.php'));
 <html lang="<?php echo $this['config']->get('language'); ?>" dir="<?php echo $this['config']->get('direction'); ?>"  data-config='<?php echo $this['config']->get('body_config','{}'); ?>'>
 
 <head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <?php echo $this['template']->render('head'); ?>
+<link href="http://fonts.googleapis.com/css?family=Roboto:regular,600,700,900&subset=cyrillic,latin" rel="stylesheet">
 </head>
 
-<body onload="mobilefriendly()" class="<?php echo $this['config']->get('body_classes'); ?>">
-
+<body  class="<?php echo $this['config']->get('body_classes'); ?>">
+ <div class="popup" data-ix="popup" style="display: none;">
+    <div class="form-wrapper w-form">
+      <h4 class="title-form">Заказать звонок</h4>
+      <form class="form" data-name="call back" id="wf-form-call-back" name="wf-form-call-back">
+        <input class="input w-input" data-name="Name" id="Name-3" maxlength="256" name="Name" placeholder="Ваше имя" type="text">
+        <input class="input w-input" data-name="telefon" id="telefon" maxlength="256" name="telefon" placeholder="Ваш телефон" required="required" type="text">
+        <input class="form-but w-button" data-wait="идет отправка..." type="submit" value="Заказать звонок">
+        <div class="_15-minute">перезвоним в течение 15 минут</div>
+      </form>
+      <div class="w-form-done">
+        <div>Заявка отправлена менеджер свяжется
+          <br>с Вами в течение 15 минут</div>
+      </div>
+      <div class="error w-form-fail" id="call-back">
+        <div>Произошла ошибка попробуйте еще раз</div>
+      </div>
+    </div>
+    <a class="close w-inline-block" data-ix="close" href="#">
+      <img src="images/yootheme/demo/close-button.png" width="32">
+    </a>
+  </div>
 	<div class="tm-page-bg">
 
 		<div class="uk-container uk-container-center">
 
 			<div class="tm-container">
-
+              <div class="header-container">
 				<?php if ($this['widgets']->count('logo + search + headerbar')) : ?>
-				<div class="tm-headerbar uk-clearfix uk-hidden-small">
+				<div class="tm-headerbar uk-clearfix">
 
 					<?php if ($this['widgets']->count('logo')) : ?>
 					<a class="tm-logo" href="<?php echo $this['config']->get('site_url'); ?>"><?php echo $this['widgets']->render('logo'); ?></a>
@@ -42,19 +65,20 @@ include($this['path']->path('layouts:theme.config.php'));
 
 				</div>
 				<?php endif; ?>
+			  </div>
 
 				<?php if ($this['widgets']->count('menu + toolbar-l + toolbar-r')) : ?>
 				<div class="tm-top-block tm-grid-block">
 
 					<?php if ($this['widgets']->count('menu')) : ?>
-					<nav class="tm-navbar uk-navbar">
+					<nav class="tm-navbar uk-navbar" id="cssmenu">
 
 						<?php if ($this['widgets']->count('menu')) : ?>
 						<?php echo $this['widgets']->render('menu'); ?>
 						<?php endif; ?>
 
 						<?php if ($this['widgets']->count('offcanvas')) : ?>
-						<a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+						<a href="#offcanvas" class="uk-navbar-toggle" data-uk-offcanvas></a>
 						<?php endif; ?>
 
 						<?php /*if ($this['widgets']->count('logo-small')) : ?>
@@ -109,7 +133,7 @@ include($this['path']->path('layouts:theme.config.php'));
 							<?php echo $this['template']->render('content'); ?>
 
 						</main>
-						<?php endif; ?>
+						<?php endif;?>
 
 						<?php if ($this['widgets']->count('main-bottom')) : ?>
 						<section class="<?php echo $grid_classes['main-bottom']; ?> tm-grid-block" data-uk-grid-match="{target:'> div > .uk-panel'}"><?php echo $this['widgets']->render('main-bottom', array('layout'=>$this['config']->get('grid.main-bottom.layout'))); ?></section>
@@ -196,6 +220,6 @@ function mobilefriendly() {
 }
 </script>	
 </body>
-<script async type="text/javascript" src="//api.pozvonim.com/widget/callback/v3/6a3249f96b3575c1832af5e2f31ae51b/connect" id="check-code-pozvonim" charset="UTF-8"></script>
+<!--script async type="text/javascript" src="//api.pozvonim.com/widget/callback/v3/6a3249f96b3575c1832af5e2f31ae51b/connect" id="check-code-pozvonim" charset="UTF-8"></script-->
 
 </html>
